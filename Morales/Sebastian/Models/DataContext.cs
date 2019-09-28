@@ -4,5 +4,7 @@
     public class DataContext:DbContext
     {
         public DataContext() : base("DefaultConnection") { }
+
+        public System.Data.Entity.DbSet<Sebastian.Models.Clown> Clowns { get; set; }
     }
 }
